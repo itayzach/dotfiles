@@ -1,0 +1,20 @@
+[user]
+	name = Itay Zach
+	email = zitay.zach@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+    cout = checkout
+    sm   = submodule
+	lp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lol = log --oneline --graph --decorate
+[push]
+	default = simple
+[status]
+	submoduleSummary = true
+[diff]
+	tool = vimdiff
+[color]
+	ui = auto
