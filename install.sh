@@ -7,7 +7,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gitconfig  my_alias  vim_runtime"
+files="gitconfig  bashrc bash_aliases  vim_runtime"
 ##########
 
 # create dotfiles_old in homedir
@@ -20,10 +20,10 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+echo "Moving any existing dotfiles from ~ to $olddir"
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/ > /dev/null
+    mv ~/.$file ~/dotfiles_old/ 2> /dev/null
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
