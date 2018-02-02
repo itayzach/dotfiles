@@ -7,7 +7,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gitconfig  bashrc bash_aliases  vim_runtime"
+files="gitconfig  bashrc inputrc bash_aliases  vim_runtime"
 ##########
 
 # create dotfiles_old in homedir

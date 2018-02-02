@@ -1,0 +1,5 @@
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+"\ep": history-search-backward
+"\en": history-search-forward
