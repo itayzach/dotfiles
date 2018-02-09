@@ -23,3 +23,7 @@ sudo vim /etc/modules
 snd-soc-rt286
 ```
 
+### Add video codecs (for Netflix)
+```
+sudo apt install ubuntu-restricted-extras
+```
