@@ -3,6 +3,7 @@ if has("gui_running")
     "colorscheme desert
     highlight Cursor guifg=white guibg=steelblue
     highlight iCursor guifg=white guibg=steelblue
+    set guifont=Monospace\ 11
 endif
 
 " line numbers
