@@ -79,6 +79,9 @@ xterm*|rxvt*)
     ;;
 esac
 
+# add time 
+PS1="\[\e[31m\][\$(date +%H:%M)]\[\e[0m\]$PS1"
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"

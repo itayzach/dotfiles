@@ -8,8 +8,8 @@
 	co = checkout
     cout = checkout
     sm   = submodule
-	lp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lol = log --oneline --graph --decorate
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    br = branch
 [push]
 	default = simple
 [status]
